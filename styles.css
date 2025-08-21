@@ -6,7 +6,7 @@
 }
 
 td.lecture {
-    background-color: #fffd80;
+    background-color: #fcfa8e;
 }
 
 td.special {
@@ -14,15 +14,15 @@ td.special {
 }
 
 td.important {
-    background-color: #ff8187;
+    background-color: #fc9a9f;
 }
 
 td.holiday {
-    background-color: #83ff81;
+    background-color: #9df081;
 }
 
 .reading {
-    color: #3338e9;
+    color: #3350ea;
 }
 
 .assignment {
@@ -30,7 +30,7 @@ td.holiday {
 }
 
 .deadline {
-    color: #f03333;
+    color: #f11f1f;
 }
 
 * {
@@ -46,14 +46,14 @@ body {
 }
 
 ul:not(.navbar-links), ol:not(.navbar-links) {
-    padding-left: 1em;       /* Proper bullet indentation */
-    margin-top: 0;          /* Removes top margin */
-    margin-bottom: 0;       /* Removes bottom margin */
-    list-style-position: outside; /* Bullets stay outside text */
+    padding-left: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style-position: outside;
 }
 
 li {
-    margin-bottom: 0.25em;  /* Optional: Controls space between items */
+    margin-bottom: 0.25em;
 }
 
 .navbar {
@@ -280,6 +280,7 @@ h2::after {
     .dropdown-menu li a {
         color: white;
         padding-left: 1rem;
+        font-size: 1.1em;
     }
 
     .dropdown-menu li a:hover {
