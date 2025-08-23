@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<nav class="navbar">
+<nav class="navbar" id="top">
     <div class="navbar-brand">
         <a href="index.html">COM-122</a>
         <span style="font-size:1em;">Introduction to Programming</span>
@@ -28,6 +28,7 @@
             </ul>
         </li>
         <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="tips.html">Best Practices</a></li>
     </ul>
 </nav>
 
@@ -39,7 +40,7 @@
 
     <h2>General Information</h2>
     <p>
-        Projects are announced at the beginning of a lecture class, somewhere in mid-to-late-november. With the announcement, a repository with starter code and completion requirements are published. In the following weeks, during bonus sessions, with the help of an instructor you will transform the repository into a minimum value product. After that, you will have a few weeks until the project defense to complete the basic and additional requirements, which are listed in the readme of the repository. <br>
+        Projects are announced at the beginning of a lecture class, somewhere in mid-to-late-november. With the announcement, a repository with starter code and completion requirements is published. In the following weeks, during bonus sessions, with the help of an instructor you will transform the repository into a minimum value product. After that, you will have a few weeks until the project defense to complete the basic and additional requirements, which are listed in the <code>readme</code> of the repository.<br>
         The project defense falls on the week after finals. During the defense, you will have to present your work, explain what changes you have made, be ready to demonstrate your knowledge of the codebase, and demonstrate the fulfillment of project requirements in less than five minutes. With the consent of the author, the best project of the semester will be put into the hall of fame (below).<br><br>
 
         <i>Note: If you are interested in the history of Project-Based Learning, check out <a href="https://drive.google.com/drive/folders/1lTOdjswU0P2ODgKCKyZdQhD6RR48hxDt">this series</a>.</i>
@@ -56,9 +57,22 @@
     <h2>Best Project of 2023: Border Line (<a href="https://github.com/toksaitov/simple-dungeon-project">Dungeon Crawler</a>)</h2>
     <img src="https://i.imgur.com/BuFbzFw.png" alt="" style="width: 100%; display: block; margin: 0 auto;">
     <b>Author:</b> Luna Maltseva (<a href="https://github.com/lunamaltseva">lunamaltseva</a>) <br>
-    <b>Description:</b> <a href="https://github.com/lunamaltseva/borderline">Border Line</a> is a puzzle dungeon-crawler set on a chess-board with a blend of chess' and checkers' rules, though unlike either of those, the amount of turns is limited. The goal of the game is to complete exit all five levels, each level introducing new mechanics. The project is built exclusively on materials taught during the course, with raylib as a graphics library.
-
+    <b>Description:</b> <a href="https://github.com/lunamaltseva/borderline">Border Line</a> is a puzzle dungeon-crawler set on a chess-board with a blend of chess' and checkers' rules, though unlike either of those, the amount of turns is limited. The goal of the game is to complete all five levels, with each level introducing new mechanics. The project is built exclusively on materials taught during the course, with raylib as a graphics library.
 </main>
+
+<footer class="footer">
+    <hr>
+    <p>
+        Questions regarding COM-122? Contact us via our <a href="about.html#staff">emails</a>.<br>
+        <b><a href="#top">Top</a></b> // <b><a href="index.html">Home</a></b> // <i><span id="last-updated"></span></i><br><br>
+        * This is an unofficial website for the Introduction to Programming course at AUCA, run by its Teaching Assistants.
+    </p>
+</footer>
+
+<script>
+    document.getElementById("last-updated").textContent +=
+        "Last updated: " + document.lastModified;
+</script>
 
 <script src="navbar.js"></script>
 </body>

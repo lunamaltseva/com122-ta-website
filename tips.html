@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COM-122: Introduction to Programming</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="navbar" id="top">
+    <div class="navbar-brand">
+        <a href="index.html">COM-122</a>
+        <span style="font-size:1em;">Introduction to Programming</span>
+    </div>
+
+    <button class="navbar-toggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <ul class="navbar-links">
+        <li class="dropdown">
+            <a href="index.html">Class</a>
+            <ul class="dropdown-menu">
+                <li><a href="about.html">Overview</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="tips.html">Best Practices</a></li>
+    </ul>
+</nav>
+
+<main class="content">
+    <h1>Best Practices in Programming</h1>
+    <p> <i>
+        There is more to programming than getting your program to produce the desired outcome. As projects scale, their maintainability, streamlining of processes, and code modularity take the center stage. Herein we have compiled a list of best practices and common mistakes in programming, which we will be reactively topping up throughout the semester.
+    </i> </p>
+
+    <h2>Best Practices</h2>
+    <ul>
+        <li>
+            <b>Keep Code Consistent</b>: In your (or your company's) codebase, always use the agreed upon naming conventions(camelCase, snake_case), brace style (K&R, Allman), whitespace rules, blank line usage, etc. Doing so improves code navigation.
+        </li>
+        <li>
+            <b>Use Descriptive Variable Names</b>: The purpose of a variable should always become apparent from its name. It is best to avoid naming (global) variables something generic (<code>data</code>, <code>value</code>, <code>stuff</code>), single letter names (<code>a</code>, <code>b</code>, <code>f</code>), ambiguous or misleading (<code>flag</code>, <code>status</code>), and unprofessional names (<code>asdaisdh</code>, <code>what</code>). Doing so improves code readability.
+        </li>
+        <li>
+            <b>Commit Regularly, Push When It Works</b>: Make a habit of committing after implementing features* and pushing upon completion of all features. Doing so allows for progress tracking, enables per-feature debugging, and permits to restore earlier versions of your code.<br>*Your program should be in a compilable state.
+        </li>
+        <li>
+            <b>Be Descriptive In Commits</b>: When committing, provide a descriptive commit message in the form of <code>&ltverb&gt &ltsubject&gt [optional &ltdetails&gt]</code>. Doing so simplifies code review.
+        </li>
+    </ul>
+
+    <h2>Common Mistakes</h2>
+    <ul>
+        <li>
+            <b>Using "Magic Values"</b>: Try to avoid using magic values (values used in equations for unknown purposes) in your code, such as:<br>
+            <code>float offsetH = fmodf((0.24f * frameTime) * spacing, spacing);</code>*<br>
+            Avoiding magic values improves code clarity.<br>
+            *0.24f is a magic value, presumably used for scaling.
+        </li>
+    </ul>
+    <br>
+    To Be Extended...
+</main>
+
+<footer class="footer">
+    <hr>
+    <p>
+        Questions regarding COM-122? Contact us via our <a href="about.html#staff">emails</a>.<br>
+        <b><a href="#top">Top</a></b> // <b><a href="index.html">Home</a></b> // <i><span id="last-updated"></span></i><br><br>
+        * This is an unofficial website for the Introduction to Programming course at AUCA, run by its Teaching Assistants.
+    </p>
+</footer>
+
+<script>
+    document.getElementById("last-updated").textContent +=
+        "Last updated: " + document.lastModified;
+</script>
+
+<script src="navbar.js"></script>
+</body>
+</html>
