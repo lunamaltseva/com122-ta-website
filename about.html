@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<nav class="navbar">
+<nav class="navbar" id="top">
     <div class="navbar-brand">
         <a href="index.html">COM-122</a>
         <span style="font-size:1em;">Introduction to Programming</span>
@@ -29,6 +29,7 @@
             </ul>
         </li>
         <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="tips.html">Best Practices</a></li>
     </ul>
 </nav>
 
@@ -51,7 +52,7 @@
 
     <h2 id="communication">Communication</h2>
     <p>
-        Assignments will be distributed through AUCA's e-course system. Announcements will be made during Lectures and Labs and will be duplicated to the course <a href="schedule.html">schedule</a>.
+        Assignments will be distributed through AUCA's e-course system. Announcements will be made during your Lecture and Lab classes and will be duplicated to the course <a href="schedule.html">schedule</a>.
     </p>
 
     <h2 id="grading">Grading Policy</h2>
@@ -59,7 +60,7 @@
     <ul>
         <li>Lab Submissions and Class Work (16%)</li>
         <li>Online Judge Problems (16%)</li>
-        <li>Project (13%)</li>
+        <li><a href="projects.html">Project</a> (13%)</li>
         <li>Midterm Exam (25%)
             <ul>
                 <li>Theory (10%)</li>
@@ -86,7 +87,7 @@
     <h2 id="textbooks">Textbooks</h2>
     <p><strong>Mandatory:</strong></p>
     <ol>
-        <li> Introduction to Programming with C++, 3rd edition by Y. Daniel Liang (AUCA Library Call Number: QA76.73.C153 L53 2014, ISBN: 978-0133252811) </li>
+        <li> Introduction to Programming with C++, 3rd edition by Y. Daniel Liang (AUCA Library Call Number: QA76.73.C153 L53 2014, ISBN: 978-0133252811)</li>
     </ol>
     <p><strong>Supplemental:</strong></p>
     <ol>
@@ -102,19 +103,33 @@
 
     <h2 id="schedule">Class Schedules</h2>
     <p>
-        Lectures will be held on Monday at 10:50, while Labs will be held on Wednesday at 10:50/12:45/14:10, depending on your instructor.
+        The Lecture will be held on Monday at 10:50, while Labs will be held on Wednesday at 10:50/12:45/14:10, depending on your section.<br>
+        Additionally, bonus lectures will be conducted on Fridays. For more details, please consult the <a href="schedule.html">schedule</a>.
     </p>
 
     <h2 id="staff">Staff</h2>
     <strong>Instructors</strong> <br>
-    <a href="https://auca.kg/en/economics_faculty_staff/13/">Dmitrii Toksaitov</a><br>
+    <a href="https://www.auca.kg/en/directory/13/">Dmitrii Toksaitov</a><br>
     <a href="https://auca.kg/en/dirfooter/639/">Anatoly Ignatiev</a><br>
     <a href=""></a>Adilet Abdykerimov<br>
     <strong>Teaching Assistants</strong> <br>
-    Luna Maltseva (md12366)<br>
-    Sofia Kan (ks12246)
-
+    Luna Maltseva (<a href="mailto:md12366@auca.kg">md12366</a>)<br>
+    Sofia Kan (<a href="mailto:ks12246@auca.kg">ks12246</a>)
 </main>
+
+<footer class="footer">
+    <hr>
+    <p>
+        Questions regarding COM-122? Contact us via our <a href="about.html#staff">emails</a>.<br>
+        <b><a href="#top">Top</a></b> // <b><a href="index.html">Home</a></b> // <i><span id="last-updated"></span></i><br><br>
+        * This is an unofficial website for the Introduction to Programming course at AUCA, run by its Teaching Assistants.
+    </p>
+</footer>
+
+<script>
+    document.getElementById("last-updated").textContent +=
+        "Last updated: " + document.lastModified;
+</script>
 
 <script src="navbar.js"></script>
 </body>

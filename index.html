@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<nav class="navbar">
+<nav class="navbar" id="top">
     <div class="navbar-brand">
         <a href="index.html">COM-122</a>
         <span style="font-size:1em;">Introduction to Programming</span>
@@ -28,13 +28,30 @@
             </ul>
         </li>
         <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="tips.html">Best Practices</a></li>
     </ul>
 </nav>
 
 <main class="content">
-    <h2>News</h2>
-
+    <h2>Announcements</h2>
+    <p>
+        <b>Fall 2025: </b> COM-122: Introduction to Programming will be taught in a lecture-lab format, with the lecture on Monday (10:50) and lab classes on Wednesday (the time depends on your section).
+    </p>
 </main>
+
+<footer class="footer">
+    <hr>
+    <p>
+        Questions regarding COM-122? Contact us via our <a href="about.html#staff">emails</a>.<br>
+        <b><a href="#top">Top</a></b> // <b><a href="index.html">Home</a></b> // <i><span id="last-updated"></span></i><br><br>
+        * This is an unofficial website for the Introduction to Programming course at AUCA, run by its Teaching Assistants.
+    </p>
+</footer>
+
+<script>
+    document.getElementById("last-updated").textContent +=
+        "Last updated: " + document.lastModified;
+</script>
 
 <script src="navbar.js"></script>
 </body>
