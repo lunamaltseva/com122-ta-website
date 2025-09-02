@@ -10,10 +10,16 @@ document.addEventListener('DOMContentLoaded', () => {
     dropdownToggles.forEach(link => {
         link.addEventListener('click', (e) => {
             if (window.innerWidth <= 768) {
-                e.preventDefault(); // Prevent navigation
+                e.preventDefault();
                 const dropdown = link.parentElement;
                 dropdown.classList.toggle('open');
             }
         });
     });
+
+    const footer = document.getElementById("last-updated");
+    if (footer) {
+        footer.textContent = "2025-09-02 22:26:16";
+    }
 });
+
