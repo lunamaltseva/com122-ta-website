@@ -3,6 +3,7 @@
     --auca-light-blue: #2D457C;
     --dark-gray: #333;
     --light-gray: #f5f5f5;
+    --auca-red: #b71c1c;
 }
 
 td.lecture {
@@ -11,6 +12,10 @@ td.lecture {
 
 td.special {
     background-color: #8085ff;
+}
+
+td.bonus {
+    background-color: #80dbff;
 }
 
 td.important {
@@ -43,6 +48,22 @@ body {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
     color: #333;
+}
+
+pre code {
+    display: block;
+    padding: 10px;
+    background-color: #f5f5f5;
+    color: var(--auca-light-blue);
+    border-radius: 5px;
+}
+
+code {
+    color: var(--auca-light-blue);
+    background-color: #f5f5f5;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-family: monospace;
 }
 
 .footer a:link,
