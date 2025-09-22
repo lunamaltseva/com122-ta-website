@@ -19,7 +19,7 @@ td.bonus {
 }
 
 td.important {
-    background-color: #fc9a9f;
+    background-color: #ffa9ac;
 }
 
 td.holiday {
@@ -35,7 +35,7 @@ td.holiday {
 }
 
 .deadline {
-    color: #f11f1f;
+    color: #ff0000;
 }
 
 * {
