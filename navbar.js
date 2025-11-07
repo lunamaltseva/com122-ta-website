@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const footer = document.getElementById("last-updated");
     if (footer) {
-        footer.textContent = "2025-27-10 14:38:32";
+        footer.textContent = "2025-11-07 16:24:22";
     }
 });
 
