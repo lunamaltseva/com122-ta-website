@@ -9,17 +9,20 @@
 </head>
 <body>
 
+<div class="navbar-overlay"></div>
 <nav class="navbar" id="top">
-    <div class="navbar-brand">
-        <a href="index.html">COM-122</a>
-        <span style="font-size:1em;">Introduction to Programming</span>
-    </div>
+    <div class="navbar-header">
+        <div class="navbar-brand">
+            <a href="index.html">COM-122</a>
+            <span style="font-size:1em;">Introduction to Programming</span>
+        </div>
 
-    <button class="navbar-toggle" aria-label="Menu">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
+        <button class="navbar-toggle" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
 
     <ul class="navbar-links">
         <li class="dropdown">
@@ -35,6 +38,29 @@
 </nav>
 
 <main class="content">
+    <div class="schedule-legend">
+        <div class="legend-item">
+            <span class="legend-color lecture"></span>
+            <span class="legend-label">Lecture / Lab</span>
+        </div>
+        <div class="legend-item">
+            <span class="legend-color bonus"></span>
+            <span class="legend-label">Bonus Lecture</span>
+        </div>
+        <div class="legend-item">
+            <span class="legend-color special"></span>
+            <span class="legend-label">Special Event</span>
+        </div>
+        <div class="legend-item">
+            <span class="legend-color important"></span>
+            <span class="legend-label">Deadline</span>
+        </div>
+        <div class="legend-item">
+            <span class="legend-color holiday"></span>
+            <span class="legend-label">Holiday / Break</span>
+        </div>
+    </div>
+
     <div class="table-container">
         <table class="schedule-table">
             <thead>
@@ -487,8 +513,10 @@
                 </td>
                 <!-- Tue --> <td class="">dec 23</td>
                 <!-- Wed --> <td class="">dec 24</td>
-                <!-- Thu --> <td class="">dec 25</td>
-                <!-- Fri --> <td class="">dec 26</td>
+                <td class="holiday" colspan="2">
+                    dec 25 - jan 12<br>
+                    Winter Break
+                </td>
             </tr>
 
             </tbody>
