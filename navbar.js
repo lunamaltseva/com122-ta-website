@@ -73,6 +73,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Update footer timestamp
     const footer = document.getElementById("last-updated");
     if (footer) {
-        footer.textContent = "2025-12-26 16:21:32";
+        footer.textContent = "2026-01-088 16:48:42";
     }
 });
