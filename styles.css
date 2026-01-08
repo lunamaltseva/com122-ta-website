@@ -236,6 +236,7 @@ li {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    position: relative;
 }
 
 .navbar-brand {
@@ -328,27 +329,29 @@ li {
     visibility: visible;
 }
 
-/* Navigation Links - Mobile (overlay menu) */
+/* Navigation Links - Mobile (dropdown from top) */
 .navbar-links {
-    position: fixed;
-    top: 0;
-    right: -280px;
-    width: 280px;
-    height: 100vh;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-height: 0;
     background: linear-gradient(180deg, var(--primary-blue) 0%, var(--primary-blue-dark) 100%);
     list-style: none;
-    padding: 5rem var(--spacing-md) var(--spacing-lg);
+    padding: 0 var(--spacing-md);
     display: flex;
     flex-direction: column;
     gap: 0;
     z-index: 1001;
     box-shadow: var(--shadow-lg);
-    transition: right var(--transition-slow);
-    overflow-y: auto;
+    transition: max-height var(--transition-slow), padding var(--transition-slow);
+    overflow: hidden;
 }
 
 .navbar-links.active {
-    right: 0;
+    max-height: 400px;
+    padding: var(--spacing-sm) var(--spacing-md);
 }
 
 .navbar-links li {
@@ -645,10 +648,6 @@ hr {
         font-size: 17px;
     }
 
-    .navbar-brand {
-        padding: 1rem 0 0 0
-    }
-
     h1 {
         font-size: 2rem;
     }
@@ -664,11 +663,14 @@ hr {
 
     .navbar {
         padding: 0 var(--spacing-lg);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .navbar-header {
-        max-width: var(--container-max);
-        margin: 0 auto;
+        width: auto;
+        position: static;
     }
 
     .navbar-brand a {
@@ -690,7 +692,7 @@ hr {
     .navbar-links {
         position: static;
         width: auto;
-        height: auto;
+        max-height: none;
         background: transparent;
         flex-direction: row;
         align-items: center;
@@ -698,6 +700,7 @@ hr {
         box-shadow: none;
         gap: 0.25rem;
         overflow: visible;
+        margin-left: auto;
     }
 
     .navbar-links > li > a {
